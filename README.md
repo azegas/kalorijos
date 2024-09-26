@@ -71,3 +71,6 @@ Preemptible A2 Instance (GPU-accelerated, cheaper):
 1 GPU, 12 vCPUs, 85 GB RAM: $0.16/hour ($115/month)
 This could be a cost-saving option for non-real-time applications where uptime is less critical.
 ```
+
+
+Hugging face yra toks modelis pvz - https://huggingface.co/Kaludi/food-category-classification-v2.0 , BET kaip suprantu jisai nera hostintas api huggingface. Jeigu butu - galeciau tiesiog api callus i ji daryti ir psio, nereiketu moketi uz modelio hostinima.
