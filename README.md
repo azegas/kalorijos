@@ -47,4 +47,27 @@ It takes about 3-4 minutes to process one images and the results are not so grea
 Without knowing the exact preparation and serving size, it's not possible to provide an accurate calorie count for this bowl of oatmeal. If we consider a basic unsweetened serving of oatmeal made with water or milk, the calories can range from around 150 to 300 per serving, depending on the ingredients and portion size. However, without more information or context, I'm unable to provide a specific calorie count for this image. 
 ```
 
+## Baisiai brangu runninti on the cloud...
 
+```
+While vCPUs can handle ML models, models like LLaMA benefit heavily from GPUs due to the parallel processing required for efficient matrix operations, especially during inference (i.e., processing the image and generating predictions).
+Running a model on a GPU-accelerated instance will result in much faster inference compared to CPU-based VMs, especially for real-time applications like meal recognition.
+```
+
+```
+VM Recommendations for Your Case:
+For running LLaMA and handling image processing with meal recognition, I recommend the following GCP instance types:
+
+N2 Standard (CPU-based):
+
+4 vCPUs, 16 GB RAM, 100 GB storage: $0.14/hour ($100/month)
+This might be okay for light inference, but still may struggle with real-time processing.
+A2 Instance (GPU-accelerated):
+
+1 GPU, 12 vCPUs, 85 GB RAM: $0.52/hour ($380/month)
+This will be much faster for processing images and running models like LLaMA.
+Preemptible A2 Instance (GPU-accelerated, cheaper):
+
+1 GPU, 12 vCPUs, 85 GB RAM: $0.16/hour ($115/month)
+This could be a cost-saving option for non-real-time applications where uptime is less critical.
+```
